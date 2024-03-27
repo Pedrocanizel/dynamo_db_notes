@@ -1,0 +1,3 @@
+full scan
+
+aws dynamodb scan --table-name prod-application-connector-ledger --filter-expression "contains(entityId, :val)" --expression-attribute-values '{":val":{"S":"1266889329310"}}'
